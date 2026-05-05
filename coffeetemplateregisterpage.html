@@ -1,0 +1,106 @@
+<html>
+<head>  
+<title> REGISTER PAGE </title>
+</head>
+<style>
+input[type=text], input[type=password], input[type=email], input[type=number], input[type=date]{
+width: 100%;
+padding: 10px;
+margin: 10px;
+display: inline-block;
+border: 1px solid blue;
+box-sizing: border-box;
+}
+
+label, .reg{
+margin: 10px;
+}
+
+img{
+margin-top: 30px;
+}
+
+
+select{
+width: 100%;
+padding: 10px;
+margin: 10px;
+display: inline-block;
+border: 1px solid blue;
+box-sizing: border-box;
+}
+
+button {
+font-family: arial;
+background-color: red;
+margin: 10px;
+border: none;
+}
+</style>
+<body>
+
+
+
+<form action="dashboard.php" method="post">
+<center> <img src="images/oo.JPG" width=100px height=100px/> </center><br>
+
+<h2 class="reg"> REGISTER </h2>
+
+<div>
+<label for="first name"> FIRST NAME: </label>
+<input type="text" placeholder= "Enter First Name" name="first name"> 
+</div> <br>
+
+<div>
+<label for="last name"> LAST NAME: </label>
+<input type="text" placeholder= "Enter Last Name" name="last name"> 
+</div> <br>
+
+<div>
+<label for="username"> USERNAME: </label>
+<input type= "text" placeholder="Enter Username" name="username">
+</div> <br>
+
+<div>
+<label for="password"> PASSWORD: </label>
+<input type="password" placeholder="Enter Password" name="password">
+</div> <br>
+
+<div>
+<label for="password"> Re-PASSWORD: </label>
+<input type="password" placeholder="Enter Re-Password" name="password"> 
+</div> <br>
+
+<div>
+<label for="email"> EMAIL: </label>
+<input type="email" placeholder="Enter Email" name="email"> 
+</div> <br>
+
+<div>
+<label for= "gender"> GENDER: </label>
+<select name = "gender"> 
+<option value = "male"> Male </option>
+<option value = "female"> Female </option>
+<option value = "other"> Other </option>
+</select>
+</div><br>
+
+
+<div>
+<label> AGE: </label>
+<input type = "number" name = "age" value = "30">
+</div> <br>
+
+<div>
+<label> BIRTHDAY: </label>
+<input type = "date" name = "birthday">
+</div> <br>
+
+<hr>
+
+<center> <button type="submit"> SUMBIT </button></center>
+</form>
+
+
+</body>
+</html>
